@@ -26,9 +26,9 @@ var urlencodedParser = bodyparser.urlencoded({ extended: false })
 
 app.get('/contact',function(req,res){
     res.render('contact', );
-    console.log(req.query);
+    // console.log(req.query);
 });
 app.post('/contact', urlencodedParser, function(req,res){
     res.render('contact-success' ,{data: req.body});
-    console.log(req.body);
+    // console.log(req.body);
 });
